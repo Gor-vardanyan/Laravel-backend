@@ -1,0 +1,59 @@
+.profileContainer {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 7em;
+    justify-content: space-evenly;
+}
+
+#userLogo {
+    width: 10vw;
+    height: 20vh;
+    display: flex;
+}
+.userInformation {
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 2.5em;
+}
+.userInformation:hover{
+    bottom: 5px;
+    border-bottom: black 2px solid;
+}
+
+.userMovie {
+    width: 40vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 2.5em;
+    & >div{
+        margin: auto;
+    }
+}
+.colum{
+    display: flex;
+}
+.mg{
+    margin-right: 2vw;
+}
+.profileimages{
+    width: 15vw;
+    height: 36vh;
+    box-shadow: 0px 0px 11px 5px #000000
+}
+.alg{
+    display: flex;
+}

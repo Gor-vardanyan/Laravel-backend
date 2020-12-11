@@ -1,0 +1,29 @@
+input {
+    width: 50vw;
+    height: 3em;
+    padding: 1em;
+    background-color: black;
+    color: #cc1518;
+    margin: 1em 1em 1em 1em ;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+}
+
+::placeholder {
+    color: #cc1518;
+    text-align: center;
+    font-size: 1em;
+}
+
+#basic *{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 30vw;
+    margin-top: 1em;
+    padding: 1em;
+}

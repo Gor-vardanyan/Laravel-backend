@@ -1,0 +1,133 @@
+
+.home{
+    height: 400px;
+    color: grey;
+}
+.moviesContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0vh;
+    width: 100vw;
+    height: 51vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.moviesContent::-webkit-scrollbar{
+    display: none;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+.center:hover > .jpg2{
+    opacity: 0%;
+}
+.movies{
+    width: 200vw;
+    height: 53vh;
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.movies > div{
+    display: flex;
+    margin-left: 4vw;
+}
+.movieGrid{
+    display: flex;
+    width: 17vw;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+.follow_left{
+    display: none;
+    position: absolute;
+    top: 58vh;
+    width: 7vw;
+    height: 42vh;
+    left: -4.3vw;
+    background-color: #1918181f;
+    background-image: linear-gradient(90deg, #000000a8, #ffffff00);
+    border: none;
+    font-size: 8vh;
+    color: #ffffff96;
+}
+
+.follow_right{
+    position: absolute;
+    top: 58vh;
+    width: 7vw;
+    height: 42vh;
+    right: -1.7vw;
+    background-color: #1918181f;
+    background-image: linear-gradient(-90deg, #000000a8, #ffffff00);
+    border: none;
+    font-size: 8vh;
+    color: #ffffff96;
+}
+.images{
+    display: flex;
+    width: 16vw;
+    height: 40vh;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    box-shadow: 0px 0px 11px 5px #000000;
+}
+.page_buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12vh;
+}
+
+.next_page{
+    width: 6vw;
+    margin-top: 1em;
+    padding: 0.5em;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: #4f4f4f;
+}
+.maintext {
+    font-size: calc(10vh - 2vw);
+    font-weight: 900;
+    color: #ffffff;
+    margin: 15% 2% 0 2%;
+    text-align: center;
+}
+
+.homeMain{
+    display: flex;
+    height: 70vh;
+    align-items: center;
+}
+.jpg2{
+    display: flex;
+    width: 101vw;
+    height: 64vh;
+    transition: ease-in-out 1s;
+    z-index: -1;
+}
+.gif1{
+    opacity: 100%;
+    position: absolute;
+    z-index: -2;
+    width: 101vw;
+    height: 64vh;
+}
+.jpg2:hover > img{
+    display: flex;
+    width: 101vw;
+    height: 64vh;
+    opacity: 100%;
+    transition: ease-in-out 0.5s;    
+}
+.Movietext{
+    position: absolute;
+    top: 50vh;
+    left: 4vw;
+    font-size: 5vh;
+}

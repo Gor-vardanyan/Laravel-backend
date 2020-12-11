@@ -1,0 +1,49 @@
+.header{
+    width: 100vw;
+    height: 15vh;
+    min-height: 2em;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+}
+
+.logoContainer{
+    align-items: center;
+    width: 50vw;
+    height: 1.5em;
+    min-height: 1em;
+    justify-content: center;
+}
+
+.logo{
+    height: calc(5em - 2.5vh);
+    margin: calc(1em -10vw);
+    width: 80%;
+    background-image: url(../../images/logo_rental_movies.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 15%;
+}
+.linksContainer{
+    display: flex;
+    flex-direction: row;
+}
+.headerButtons{
+    color: black;
+    width: 20vw;
+    margin: 1em;
+    height: 3em;
+    font-size: calc(1em -20vw);
+    border: none;
+    border-radius: 0.5em;
+
+    &:hover{
+        background-color: #cc1518;
+        color: white;
+        transition: ease-in-out 0.5s;
+    }
+}
