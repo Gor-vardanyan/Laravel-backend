@@ -20,7 +20,7 @@ class UsersController extends Controller
     }
 
     public function signup(Request $request){
-
+echo "llega";
         $input=$request->all();
         $input['password']=bcrypt($input['password']);
         
@@ -49,7 +49,7 @@ class UsersController extends Controller
     public function login(Request $request){
  
         if(Auth::attempt(['email'=>$request->email,'password'=>$request->password])){
-            $users = Auth::User();
+            $users = Auth::Users();
             $token = $users->createToken('TokenUsers')->accessToken;
 
             $respuesta=[];
