@@ -25,13 +25,11 @@ echo "llega";
         $input['password']=bcrypt($input['password']);
         
         $rules=[
-            'name' => 'required',
-            'email' => 'required|unique:App\Models\Users,email',
+            'email' => 'required',
             'password'=> 'required'
         ];
         
         $messages=[
-            'name.required' => 'The name is required',
             'email.required' => 'The email is required',
             'password.required' => 'The password is required'
         ];
