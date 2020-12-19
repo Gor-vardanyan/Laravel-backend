@@ -19,8 +19,8 @@ class UsersController extends Controller
         return $users;
     }
 
-    public function signup(Request $request){
-echo "llega";
+    public function store(Request $request){
+        
         $input=$request->all();
         $input['password']=bcrypt($input['password']);
         

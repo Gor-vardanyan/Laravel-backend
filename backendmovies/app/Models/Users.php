@@ -14,8 +14,8 @@ class Users extends Model
     protected $fillable = [
         'name',
         'email',
-        'password',
         'token',
+        'password',
         'role',
         'rented'
     ];

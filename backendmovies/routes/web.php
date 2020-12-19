@@ -17,10 +17,10 @@ use Illuminate\Http\Request;
 
 Route::get('/', function () { return view('welcome'); });
 
-Route::post('/user/signup',  [UsersController::class,'signup']);
+Route::post('/user/store',  [UsersController::class,'store']);
 Route::post('/user/login', 'App\Http\Controllers\UsersController@login');
 Route::post('/user/rent', 'App\Http\Controllers\UsersController@rent');
 Route::post('/user/downrent', 'App\Http\Controllers\UsersController@downRent');
-Route::get('/user', 'App\Http\Controllers\UsersController@findusers');
+Route::post('/user', [UsersController::class,'findusers']);
 Route::get('/user/profile', 'App\Http\Controllers\UsersController@profile');
 

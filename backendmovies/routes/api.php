@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsersController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +19,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/user/signup',  [UsersController::class,'signup']);
+Route::post('/user/login', 'App\Http\Controllers\UsersController@login');
+Route::post('/user/rent', 'App\Http\Controllers\UsersController@rent');
+Route::post('/user/downrent', 'App\Http\Controllers\UsersController@downRent');
+Route::get('/user', [UsersController::class,'findusers']);
+
+Route::get('/user/profile', 'App\Http\Controllers\UsersController@profile');
